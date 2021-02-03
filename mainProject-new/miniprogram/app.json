@@ -1,6 +1,14 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/ranking list/ranking list",
+    "pages/ytest/ytest",
+    "pages/htest/htest",
+    "pages/xtest/xtest",
+    "pages/dtest/dtest",
+    "pages/choice ques/choice ques",
+    "pages/word selection/word selection"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
