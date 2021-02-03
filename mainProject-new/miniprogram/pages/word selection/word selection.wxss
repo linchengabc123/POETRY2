@@ -1,0 +1,17 @@
+/* miniprogram/pages/word selection/word selection.wxss */
+input {
+  margin-top: 20px;
+  margin-left: 75px;
+  border: 1px red solid;
+  height: 10px;
+  width: 200px;
+}
+
+view {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+button {
+  margin-top: 20px;
+}

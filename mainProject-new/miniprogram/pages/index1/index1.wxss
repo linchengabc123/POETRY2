@@ -1,0 +1,5 @@
+/* miniprogram/pages/index1/index1.wxss */
+.button-kscg{
+  color: aqua;
+  background-color: brown;
+}

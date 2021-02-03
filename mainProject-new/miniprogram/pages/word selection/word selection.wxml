@@ -1,0 +1,17 @@
+<!--miniprogram/pages/word selection/word selection.wxml-->
+<!-- <button type="primary" bindtap="getData">开始闯关</button> -->
+<view wx:for="{{questionArray}}" wx:for-index='idx' wx:key='id'> 
+  <view wx:if='{{idx==curIndex}}'>题目{{idx+1}}:</view>  
+  <view wx:if="{{idx == curIndex}}">{{item.question[0]}}</view>
+  <view wx:if="{{idx == curIndex}}">{{item.question[1]}}</view>
+  <view wx:if="{{idx == curIndex}}">{{item.question[2]}}</view>
+  <!-- <view>答案:</view>
+  <view>{{item.answer}}</view> -->
+</view>
+<form catchsubmit='formSubmit'>
+  <input name='answer' type="text">提交答案</input>
+  <button  formType="submit" type="primary">提交答案</button>
+  <button form-type="reset">重置</button>
+</form>
+
+

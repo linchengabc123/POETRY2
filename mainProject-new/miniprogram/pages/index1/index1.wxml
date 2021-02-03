@@ -1,0 +1,4 @@
+<!--miniprogram/pages/index1/index1.wxml-->
+	<a  class="ss" bindtap="open" data-url="../index2/index2" >页面主操作</a>
+  <button class="button-kscg" bindtap="open" data-url="../index2/index2">开始闯关</button>
+  <button class="button-kscg" bindtap="open" data-url="../ranking list/ranking list">排行榜</button>
