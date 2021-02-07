@@ -1,1 +1,95 @@
 /* miniprogram/pages/ytest/ytest.wxss */
+page{
+  font-family:STXinwei;
+}
+
+
+.stage{
+  height: 120rpx;
+}
+
+.text_bt{
+  font-family:STXinwei;
+  font-size: xx-large;
+  text-align: center;
+  display: block;
+  height: 200rpx;
+  line-height: 120rpx;
+}
+.text_gk{
+  
+  display: block;
+  text-align: center;
+}
+.zt_house{
+  display: flex;
+  height: 200rpx;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.zt_stage{
+  display: flex;
+  height:300rpx;
+}
+.zt_lroute{
+  display: flex;
+  height: 200rpx;
+  width: 60%;
+  position: absolute;
+  left: 0;
+}
+.zt_rroute{
+  display: flex;
+  height: 200rpx;
+  width: 60%;
+  position: absolute;
+  right: 0;
+}
+.zt_rround{
+  display: flex;
+  height: 300rpx;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.zt_lround{
+  display: flex;
+  height: 300rpx;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.zt_flag{
+ 
+height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_route{
+  height: 300rpx;
+
+}
+.img_round{
+  width: 120rpx;
+  height: 120rpx;
+}
+.img_house{
+  width: 160rpx;
+height: 145rpx;
+}
+.img_flag{
+width: 165rpx;
+height: 150rpx;
+
+}
+.a{
+  margin-bottom: 50rpx;
+}
