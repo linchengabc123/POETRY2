@@ -1,2 +1,74 @@
 <!--miniprogram/pages/ytest/ytest.wxml-->
-<text>miniprogram/pages/ytest/ytest.wxml</text>
+
+<view class="background">
+<view  class="stage" >
+<text class="text_bt">院试</text>
+</view>
+
+<view class="zt">
+
+<view class="zt_house">
+<a bindtap="open" data-url="../word selection/word selection">
+<image class="img_house" src="/images/house.png"></image>
+<text class="text_gk">第一关</text>
+</a>
+</view>
+
+<view class="zt_stage">
+<view class="zt_lroute">
+<image class="img_route" src="/images/leftfoot.png"></image>
+</view>
+<view class="zt_rround">
+<a bindtap="open" data-url="../word selection/word selection">
+<image class="img_round" src="/images/roundno.png"></image>
+<text class="text_gk">第二关</text>
+</a>
+</view>
+</view>
+
+<view class="zt_stage">
+<view class="zt_rroute">
+<image class="img_route" src="/images/rightfoot.png"></image>
+</view>
+<view class="zt_lround">
+<a bindtap="open" data-url="../word selection/word selection">
+<image class="img_round" src="/images/roundno.png"></image>
+<text class="text_gk">第三关</text>
+</a>
+</view>
+</view>
+
+<view class="zt_stage">
+<view class="zt_lroute">
+<image class="img_route" src="/images/leftfoot.png"></image>
+</view>
+<view class="zt_rround">
+<a bindtap="open" data-url="../word selection/word selection">
+<image class="img_round" src="/images/roundno.png"></image>
+<text class="text_gk">第四关</text>
+</a>
+</view>
+</view>
+
+<view class="zt_stage">
+<view class="zt_rroute">
+<image class="img_route" src="/images/downfoot.png"></image>
+</view>
+<view class="zt_lround">
+<a bindtap="open" data-url="../word selection/word selection">
+<image class="img_round" src=""></image>
+<text class="text_gk"></text>
+</a>
+</view>
+</view>
+
+<view class="zt_flag">
+<view>
+<image class="img_flag" src="/images/flag.png"></image>
+<text class="text_gk">第五关</text>
+</view>
+</view>
+
+</view>
+
+</view>
