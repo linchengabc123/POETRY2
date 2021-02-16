@@ -1,2 +1,39 @@
-<!--miniprogram/pages/ranking list/ranking list.wxml-->
-<text>miniprogram/pages/ranking list/ranking list.wxml</text>
+<view class="container">
+ <view wx:for="{{dataArray}}" wx:for-index='idx' wx:key='id'> 
+ 
+  <view wx:if='{{idx == curIndex}}' class="title">
+  <text   class="text_title">  题 目  {{idx+1}}  </text>
+  </view>  
+
+<view>
+  <view wx:if="{{idx == curIndex}}" class="question"> 
+ <image src="/images/ranking_bg.png" class="img_ques"></image>
+  <text class="text_question" decode="{{true}}" >   &nbsp; &nbsp;{{item.question}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{idx == curIndex}}" class="c" bindtap="check1">
+  <text class="text_c">
+  A：{{item.choice[0]}}
+  </text>
+  </view>
+ 
+  <view wx:if="{{idx == curIndex}}" class="c" bindtap="check2">
+  <text class="text_c">
+  B：{{item.choice[1]}}
+  </text>
+  </view>
+  
+  <view wx:if="{{idx == curIndex}}" class="c" bindtap="check3">
+  <text class="text_c">
+  C：{{item.choice[2]}}
+  </text>
+  </view>
+
+
+</view>
+</view>
+
+ <view wx:if="{{flag}}"> 
+  本次答题共选错了{{wrongNum}}次，下次努力！
+</view>
