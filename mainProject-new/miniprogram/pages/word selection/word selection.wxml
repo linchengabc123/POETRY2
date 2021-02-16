@@ -1,17 +1,44 @@
 <!--miniprogram/pages/word selection/word selection.wxml-->
 <!-- <button type="primary" bindtap="getData">开始闯关</button> -->
-<view wx:for="{{questionArray}}" wx:for-index='idx' wx:key='id'> 
-  <view wx:if='{{idx==curIndex}}'>题目{{idx+1}}:</view>  
-  <view wx:if="{{idx == curIndex}}">{{item.question[0]}}</view>
-  <view wx:if="{{idx == curIndex}}">{{item.question[1]}}</view>
-  <view wx:if="{{idx == curIndex}}">{{item.question[2]}}</view>
+
+<view wx:for="{{questionArray}}" wx:for-index='idx' wx:key='id' class="que"> 
+ 
+  <view wx:if='{{idx==curIndex}}' class="head">  
+  <text class="text_head">
+    题 目 {{idx+1}}:
+    </text>
+    </view>  
+
+  <view wx:if="{{idx == curIndex}}" class="que_line">
+  <image src="/images/ranking_bg2.png"  class="img_que"></image>
+  <text class="text_line1">
+  {{item.question[0]}}
+  </text>
+  </view>
+
+  <view wx:if="{{idx == curIndex}}" class="que_line">
+   <text class="text_line2">
+   {{item.question[1]}}
+    </text>
+   </view>
+
+  <view wx:if="{{idx == curIndex}}" class="que_line">
+   <text class="text_line3">
+   {{item.question[2]}}
+   </text>
+   </view>
+
   <!-- <view>答案:</view>
   <view>{{item.answer}}</view> -->
 </view>
-<form catchsubmit='formSubmit'>
+
+<view class="form">
+<form catchsubmit='formSubmit'  >
   <input name='answer' type="text">提交答案</input>
-  <button  formType="submit" type="primary">提交答案</button>
-  <button form-type="reset">重置</button>
+  <button  formType="submit" type="primary" style="width:350rpx; height:100rpx;">提交答案</button>
+  <button form-type="reset" style="width:350rpx; height:100rpx;">重置</button>
 </form>
+</view>
+
 
 
